@@ -1,3 +1,27 @@
+# Changelog
+
+## [0.2.0-alpha]
+
+### Added
+
+- Implementado Application Foundation.
+- Implementado Kernel inicial.
+- Criado Container IoC.
+- Adicionado sistema de Service Providers.
+- Criados Providers:
+  - AppServiceProvider
+  - DatabaseServiceProvider
+  - LoggerServiceProvider.
+- Bootstrap reorganizado.
+- Ciclo de inicialização da aplicação implementado.
+
+### Architecture
+
+- Framework separado da aplicação.
+- Serviços registrados via Container.
+- Base preparada para Router, Middleware e Views.
+
+
 # Changelog AKAZA One
 
 
@@ -20,3 +44,4 @@ Em desenvolvimento
 - Database Core funcional
 - Model base
 - User Model inicial
+
