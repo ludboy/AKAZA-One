@@ -1,0 +1,10 @@
+{
+    "name": "akaza/one",
+    "description": "AKAZA One Framework",
+    "autoload": {
+        "psr-4": {
+            "AKAZA\\": "src/"
+        }
+    },
+    "require": {}
+}
