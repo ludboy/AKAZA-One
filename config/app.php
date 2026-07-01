@@ -10,4 +10,16 @@ return [
     "environment"=>"development",
 
 
+    "db"=>[
+
+        "host"=>"localhost",
+
+        "database"=>"akaza",
+
+        "user"=>"root",
+
+        "password"=>""
+
+    ]
+
 ];

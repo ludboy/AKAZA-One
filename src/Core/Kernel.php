@@ -26,11 +26,11 @@ class Kernel
 
 
     protected function loadConfiguration()
-    {
+{
 
-        Config::load();
+    Config::load();
 
-    }
+}
 
 
 

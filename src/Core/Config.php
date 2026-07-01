@@ -7,27 +7,44 @@ class Config
 {
 
 
-private static array $data = [];
+    private static array $data = [];
 
 
-
-public static function load()
+    public static function load()
 {
 
-self::$data = require __DIR__.'/../../config/app.php';
-
+    self::$data = require __DIR__ . "/../../config/app.php";
 
 }
 
 
 
-public static function get($key)
-{
+    public static function get(string $key)
+    {
 
-return self::$data[$key] ?? null;
+        $keys = explode('.', $key);
 
 
-}
+        $value = self::$data;
+
+
+        foreach($keys as $item){
+
+            if(!isset($value[$item])){
+
+                return null;
+
+            }
+
+
+            $value = $value[$item];
+
+        }
+
+
+        return $value;
+
+    }
 
 
 }

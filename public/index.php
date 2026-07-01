@@ -2,15 +2,19 @@
 
 require "../vendor/autoload.php";
 
-
 use AKAZA\Core\Kernel;
+use AKAZA\Core\Database;
 
 
 try {
 
+
     $app = new Kernel();
 
     $app->boot();
+
+
+    Database::connect();
 
 
     echo "

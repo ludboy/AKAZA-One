@@ -14,3 +14,9 @@
 ### Status
 
 Em desenvolvimento
+
+### Added
+
+- Database Core funcional
+- Model base
+- User Model inicial
