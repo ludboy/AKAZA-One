@@ -1,0 +1,1 @@
+AKAZA One é um framework PHP modular, orientado a objetos, construído com foco em simplicidade, desempenho, segurança e escalabilidade. Seu objetivo é servir como base para aplicações profissionais sem depender de frameworks externos, oferecendo arquitetura limpa, componentes desacoplados e uma experiência consistente para desenvolvedores.

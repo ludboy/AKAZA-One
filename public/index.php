@@ -1,31 +1,21 @@
 <?php
 
-$app = require "../bootstrap.php";
+declare(strict_types=1);
 
 
-use AKAZA\Core\Database;
+/*
+|--------------------------------------------------------------------------
+| AKAZA One - Front Controller
+|--------------------------------------------------------------------------
+|
+| Todas as requisições HTTP entram por aqui.
+| A responsabilidade deste arquivo é apenas
+| carregar a aplicação.
+|
+*/
 
 
-try {
+$app = require dirname(__DIR__) . '/bootstrap/app.php';
 
 
-    Database::connect();
-
-
-    echo "
-    <h1>AKAZA One</h1>
-
-    <p>Core iniciado com sucesso</p>
-
-    <p>Versão:
-    ".\AKAZA\Core\Config::get('version')."
-    </p>
-    ";
-
-
-}
-catch(Exception $e){
-
-    echo "Erro: ".$e->getMessage();
-
-}
+$app->run();
