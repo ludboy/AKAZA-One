@@ -1,17 +1,12 @@
 <?php
 
-require "../vendor/autoload.php";
+$app = require "../bootstrap.php";
 
-use AKAZA\Core\Kernel;
+
 use AKAZA\Core\Database;
 
 
 try {
-
-
-    $app = new Kernel();
-
-    $app->boot();
 
 
     Database::connect();
@@ -19,12 +14,17 @@ try {
 
     echo "
     <h1>AKAZA One</h1>
+
     <p>Core iniciado com sucesso</p>
-    <p>Versão: ".\AKAZA\Core\Config::get('version')."</p>
+
+    <p>Versão:
+    ".\AKAZA\Core\Config::get('version')."
+    </p>
     ";
 
 
-} catch(Exception $e){
+}
+catch(Exception $e){
 
     echo "Erro: ".$e->getMessage();
 

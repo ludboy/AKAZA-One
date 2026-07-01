@@ -1,19 +1,14 @@
 <?php
 
-require "../vendor/autoload.php";
+
+require "../bootstrap.php";
 
 
-use AKAZA\Core\Kernel;
 use AKAZA\Models\User;
 
 
-$app = new Kernel();
-
-$app->boot();
-
-
-
 echo "<pre>";
+echo "Users <br>";
 
 print_r(
     User::all()
